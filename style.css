@@ -1,4 +1,4 @@
-/* Styles for the header section */
+/* Style for the header section */
 header {
     display: flex;
     justify-content: space-between;
@@ -27,16 +27,8 @@ header {
   .company-name {
     position:relative;
     text-align: center;
-    padding: 0px;
-    left: 20px;
-    font-family: 'Sedgwick Ave Display', cursive;
-  }
-
-  /* Style for the visitor counter */
-  .visitor-counter {
-    position:relative;
-    text-align: center;
-    padding: 0px;
-    right: 10px;
+    padding: 20px;
+    top: 50%;
+    right: 43%;
     font-family: 'Sedgwick Ave Display', cursive;
   }
