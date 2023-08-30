@@ -32,35 +32,40 @@ header {
     right: 43%;
     font-family: 'Sedgwick Ave Display', cursive;
   }
+  /* h1{
+    color: white;
+  } */
 
-  /* Style for the company scope */
   h2{
-
     color: rgb(21, 139, 130);
-
     text-align: center;
-     font-size: 30px;
-
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-
+    font-size: 30px;
+    font-family: 'Sedgwick Ave Display', cursive;
     font-style: italic;
-
     text-decoration: underline;
-
     text-shadow: 2px 2px 4px #ecd5d5;
-
   }
 
- 
+  .container{
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 50px;
+    background-color: rgb(194, 188, 188);
+  }
 
   p{
-
+    /* margin-top: -100px; */
     color: black;
-
     font-size: 20px;
-
-    font-family: 'Slabo 27px', serif;
-
-    text-align: center;
-
+    font-family: 'Sedgwick Ave Display', cursive;  
+  }
+  .imga img{
+    max-width: 70%;
+    max-height: 80%;
+    margin-left: 40px;
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.2);
+  }
+  ul li{
+    font-family: 'Sedgwick Ave Display', cursive; 
   }
