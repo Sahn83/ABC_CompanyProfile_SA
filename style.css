@@ -4,6 +4,7 @@ header {
     justify-content: space-between;
     align-items: center;
     background-color: rgb(10, 153, 158);
+    
   }
   
   /* Style for the logo */
@@ -29,7 +30,7 @@ header {
     text-align: center;
     padding: 20px;
     top: 50%;
-    right: 43%;
+    left: 15%;
     font-family: 'Sedgwick Ave Display', cursive;
   }
   /* h1{
@@ -69,3 +70,33 @@ header {
   ul li{
     font-family: 'Sedgwick Ave Display', cursive; 
   }
+
+/* Reset default margin and padding on the <ul> and <li> elements */
+.navigation {
+  list-style-type: none;
+  margin: 0px;
+  padding: 10px;
+}
+
+/* Style the navigation items */
+.navigation li {
+  display: inline-block;
+  margin-left: 20px; /* Add spacing between items */
+}
+
+/* Align the navigation items to the right */
+.navigation {
+  float: right;
+}
+
+/* Style the links */
+.navigation a {
+  text-decoration: none;
+  color: #333; /* Set your desired link color */
+  font-weight: bold;
+}
+
+
+
+
+
