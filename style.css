@@ -1,101 +1,133 @@
 /* Style for the header section */
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: rgb(10, 153, 158);
-    
-  }
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(10, 153, 158);
   
-  /* Style for the logo */
-  .logo img {
-  
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    max-width: 100px;
-    height: 100px;
-    background-color: rgb(77, 166, 214);
-    border-radius: 20%;
-    padding: 2px;
-    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.2);
-    display: flex;
-    align-items: center;
-     
-  }
+}
 
-  /* Style for the company name */
-  .company-name {
-    position:relative;
-    text-align: center;
-    padding: 20px;
-    top: 50%;
-    left: 15%;
-    font-family: 'Sedgwick Ave Display', cursive;
-  }
-  /* h1{
-    color: white;
-  } */
+/* Style for the logo */
+.logo img {
 
-  h2{
-    color: rgb(21, 139, 130);
-    text-align: center;
-    font-size: 30px;
-    font-family: 'Sedgwick Ave Display', cursive;
-    font-style: italic;
-    text-decoration: underline;
-    text-shadow: 2px 2px 4px #ecd5d5;
-  }
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  max-width: 100px;
+  height: 100px;
+  background-color: rgb(77, 166, 214);
+  border-radius: 20%;
+  padding: 2px;
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+   
+}
 
-  .container{
-    display: grid;
-    align-items: center;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 50px;
-    background-color: rgb(194, 188, 188);
-  }
+/* Style for the company name */
+.company-name {
+  position:relative;
+  text-align: center;
+  padding: 20px;
+  /* top: 50%; */
+  right: 42%;
+  font-family: 'Sedgwick Ave Display', cursive;
+}
+/* h1{
+  color: white;
+} */
 
-  p{
-    /* margin-top: -100px; */
-    color: black;
-    font-size: 20px;
-    font-family: 'Sedgwick Ave Display', cursive;  
-  }
-  .imga img{
-    max-width: 70%;
-    max-height: 80%;
-    margin-left: 40px;
-    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.2);
-  }
-  ul li{
-    font-family: 'Sedgwick Ave Display', cursive; 
-  }
+/* h2{
+  color: rgb(21, 139, 130);
+  text-align: center;
+  font-size: 30px;
+  font-family: 'Sedgwick Ave Display', cursive;
+  font-style: italic;
+  text-decoration: underline;
+  text-shadow: 2px 2px 4px #ecd5d5;
+}
+
+.container{
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 50px;
+  background-color: rgb(194, 188, 188);
+} */
+
+/* p{
+  margin-top: -100px;
+  color: black;
+  font-size: 20px;
+  font-family: 'Sedgwick Ave Display', cursive;  
+}
+.imga img{
+  max-width: 70%;
+  max-height: 80%;
+  margin-left: 40px;
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.2);
+}
+ul li{
+  font-family: 'Sedgwick Ave Display', cursive; 
+} */
 
 /* Reset default margin and padding on the <ul> and <li> elements */
 .navigation {
-  list-style-type: none;
-  margin: 0px;
-  padding: 10px;
+list-style-type: none;
+margin: 0px;
+padding: 10px;
 }
 
 /* Style the navigation items */
 .navigation li {
-  display: inline-block;
-  margin-left: 20px; /* Add spacing between items */
+display: inline-block;
+margin-left: 10px; /* Add spacing between items */
 }
 
 /* Align the navigation items to the right */
 .navigation {
-  float: right;
+float: right;
 }
 
 /* Style the links */
 .navigation a {
-  text-decoration: none;
-  color: #333; /* Set your desired link color */
-  font-weight: bold;
+text-decoration: none;
+color: #333; /* Set your desired link color */
+font-weight: bold;
 }
 
+ul{
+  list-style: none;
+  /* background: rgb(77, 166, 214); */
+}
+ul li{
+  display: inline-block;
+  position: relative;
+}
+ul li a {
+  display: block;
+  padding: 5px 5px;
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+  font-size: 15px;
+}
+ul li ul.dropdown li{
+  display: block;
+}
+ul li ul.dropdown{
+  width: 150%;
+  /* background: #2c8ec7; */
+  position: absolute;
+  z-index: 999;
+  display: none;
+}
+ul li a:hover{
+  background: #0e7280;
+}
+ul li:hover ul.dropdown{
+  display: block;
+}
 
 
 
