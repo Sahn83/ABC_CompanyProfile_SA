@@ -1,134 +1,182 @@
 /* Style for the header section */
 header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: rgb(10, 153, 158);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(10, 153, 158);
+  }
   
+  /* Style for the logo */
+  .logo img {
+  
+    position: absolute;
+    top: 26px;
+    left: 26px;
+    max-width: 100px;
+    height: 100px;
+    background-color: rgb(77, 166, 214);
+    border-radius: 20%;
+    padding: 2px;
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+     
+  }
+
+  /* Style for the company name */
+  h1 {
+    position:relative;
+    text-align:justify;
+    padding: 0px;
+    top: 50%;
+    right: 176%;
+    font-family: 'Sedgwick Ave Display', cursive;
+  }
+  h2{
+    color: whitesmoke;
+    position:relative;
+    text-align:justify;
+    padding: 0px;
+    top: 50%;
+    right: 190%;
+    font-family: 'Sedgwick Ave Display', cursive;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+    transition: background-color 0.3s,color 0.3s;
+  }
+  h2:hover{
+    color: red;
+  }
+/* Style for redirect link of company name */
+  h1 a, h1 a:visited {
+
+    color: inherit; /* Inherit the color from the parent element */
+  
+    text-decoration: none;  /*Remove underline */
+  
+   }
+
+/* Style for redirect button */
+     
+.redirect-button {
+    width: 220px;
+    height: 50px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
 }
 
-/* Style for the logo */
-.logo img {
-
-  position: absolute;
-  top: 20px;
-  left: 20px;
-  max-width: 100px;
-  height: 100px;
-  background-color: rgb(77, 166, 214);
-  border-radius: 20%;
-  padding: 2px;
-  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.2);
-  display: flex;
-  align-items: center;
-   
+.redirect-button:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
 }
 
-/* Style for the company name */
-.company-name {
-  position:relative;
-  text-align: center;
-  padding: 20px;
-  /* top: 50%; */
-  right: 42%;
-  font-family: 'Sedgwick Ave Display', cursive;
-}
-/* h1{
-  color: white;
-} */
-
-/* h2{
-  color: rgb(21, 139, 130);
-  text-align: center;
-  font-size: 30px;
-  font-family: 'Sedgwick Ave Display', cursive;
-  font-style: italic;
-  text-decoration: underline;
-  text-shadow: 2px 2px 4px #ecd5d5;
+.redirect-button:active {
+    color: #000
 }
 
-.container{
-  display: grid;
-  align-items: center;
-  grid-template-columns: 1fr 1fr;
-  column-gap: 50px;
-  background-color: rgb(194, 188, 188);
-} */
+.redirect-button:active:after {
+    background: transparent;
+}
 
-/* p{
-  margin-top: -100px;
-  color: black;
-  font-size: 20px;
-  font-family: 'Sedgwick Ave Display', cursive;  
+.redirect-button:hover:before {
+    opacity: 1;
 }
-.imga img{
-  max-width: 70%;
-  max-height: 80%;
-  margin-left: 40px;
-  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.2);
+
+.redirect-button:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #111;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
 }
-ul li{
-  font-family: 'Sedgwick Ave Display', cursive; 
-} */
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+
+
 
 /* Reset default margin and padding on the <ul> and <li> elements */
 .navigation {
-list-style-type: none;
-margin: 0px;
-padding: 10px;
-}
-
-/* Style the navigation items */
-.navigation li {
-display: inline-block;
-margin-left: 10px; /* Add spacing between items */
-}
-
-/* Align the navigation items to the right */
-.navigation {
-float: right;
-}
-
-/* Style the links */
-.navigation a {
-text-decoration: none;
-color: #333; /* Set your desired link color */
-font-weight: bold;
-}
-
-ul{
-  list-style: none;
-  /* background: rgb(77, 166, 214); */
-}
-ul li{
-  display: inline-block;
-  position: relative;
-}
-ul li a {
-  display: block;
-  padding: 5px 5px;
-  color: #fff;
-  text-decoration: none;
-  text-align: center;
-  font-size: 15px;
-}
-ul li ul.dropdown li{
-  display: block;
-}
-ul li ul.dropdown{
-  width: 150%;
-  /* background: #2c8ec7; */
+  list-style-type: none;
+  margin: 150px;
+  padding: 0px;
   position: absolute;
-  z-index: 999;
-  display: none;
-}
-ul li a:hover{
-  background: #0e7280;
-}
-ul li:hover ul.dropdown{
-  display: block;
-}
-
-
-
-
+  top: -2px;
+  right: -142px;
+  }
+  
+  /* Style the navigation items */
+  .navigation li {
+  display: inline-block;
+  margin-left: 10px; /* Add spacing between items */
+  }
+  
+  /* Align the navigation items to the right */
+  .navigation {
+  float: right;
+  }
+  
+  /* Style the links */
+  .navigation a {
+  text-decoration: none;
+  color: #333; /* Set your desired link color */
+  font-weight: bold;
+  }
+  
+  ul{
+    list-style: none;
+    background: rgb(138, 241, 248);
+  }
+  ul li{
+    display: inline-block;
+    position: relative;
+  }
+  ul li a {
+    display: block;
+    padding: 10px 5px;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    font-size: 15px;
+  }
+  ul li ul.dropdown li{
+    display: block;
+  }
+  ul li ul.dropdown{
+    width:10rem;
+    /* background: #2c8ec7; */
+    position: absolute;
+    /* z-index: 999; */
+    display: none;
+    
+  }
+  ul li a:hover{
+    background: #77d3df;
+  }
+  ul li:hover ul.dropdown{
+    display: block;
+  }
