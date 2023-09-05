@@ -125,7 +125,7 @@ header {
   margin: 150px;
   padding: 0px;
   position: absolute;
-  top: -2px;
+  top: -1px;
   right: -142px;
   }
   
@@ -180,3 +180,11 @@ header {
   ul li:hover ul.dropdown{
     display: block;
   }
+
+  /* Style for the navigation bar links on hover */
+  ul.navigation li a:hover {
+     /* Add an underline on hover */
+    text-decoration: underline;
+}
+
+
