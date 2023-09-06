@@ -1,0 +1,22 @@
+h1 {
+    position:relative;
+    text-align:justify;
+    padding: 0px;
+    top: 50%;
+    right: 176%;
+    font-family: 'Sedgwick Ave Display', cursive;
+  }
+  h2{
+    color: rgb(22, 115, 177);
+    position:relative;
+    text-align:justify;
+    padding: 0px;
+    top: 50%;
+    right: 190%;
+    font-family: 'Sedgwick Ave Display', cursive;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+    transition: background-color 0.3s,color 0.3s;
+  }
+  h2:hover{
+    color: red;
+  }

@@ -125,7 +125,7 @@ header {
   margin: 150px;
   padding: 0px;
   position: absolute;
-  top: -1px;
+  top: -2px;
   right: -142px;
   }
   
@@ -167,24 +167,28 @@ header {
     display: block;
   }
   ul li ul.dropdown{
-    width:10rem;
-    /* background: #2c8ec7; */
+    width:15rem;
+    background:  rgb(10, 153, 158);
     position: absolute;
-    /* z-index: 999; */
+    z-index: 999;
+    padding-left: 0%;
     display: none;
-    
   }
+
   ul li a:hover{
     background: #77d3df;
   }
   ul li:hover ul.dropdown{
     display: block;
   }
+  /* ul li ul li ul.dropdown-new:hover{
+    color: red;
+    display: block;
+  } */
+
 
   /* Style for the navigation bar links on hover */
   ul.navigation li a:hover {
-     /* Add an underline on hover */
-    text-decoration: underline;
+    /* Add an underline on hover */
+   text-decoration: underline;
 }
-
-
