@@ -36,7 +36,7 @@ header {
     text-align:justify;
     padding: 0px;
     top: 50%;
-    right: 76%;
+    right: 82%;
     font-size: 40px;
     font-family: 'Sedgwick Ave Display', cursive;
   }
@@ -46,7 +46,7 @@ header {
     text-align:justify;
     padding: 0px;
     top: -15px;
-    right: 97%;
+    right: 104%;
     font-family: 'Sedgwick Ave Display', cursive;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
     transition: background-color 0.3s,color 0.3s;
@@ -63,78 +63,9 @@ header {
   
    }
 
-/* Style for redirect button */
-     
-/* .redirect-button {
-    width: 220px;
-    height: 50px;
-    border: none;
-    outline: none;
-    color: #fff;
-    background: #111;
-    cursor: pointer;
-    position: relative;
-    z-index: 0;
-    border-radius: 10px;
-}
-
-.redirect-button:before {
-    content: '';
-    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
-    position: absolute;
-    top: -2px;
-    left:-2px;
-    background-size: 400%;
-    z-index: -1;
-    filter: blur(5px);
-    width: calc(100% + 4px);
-    height: calc(100% + 4px);
-    animation: glowing 20s linear infinite;
-    opacity: 0;
-    transition: opacity .3s ease-in-out;
-    border-radius: 10px;
-}
-
-.redirect-button:active {
-    color: #000
-}
-
-.redirect-button:active:after {
-    background: transparent;
-}
-
-.redirect-button:hover:before {
-    opacity: 1;
-}
-
-.redirect-button:after {
-    z-index: -1;
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: #111;
-    left: 0;
-    top: 0;
-    border-radius: 10px;
-}
-
-@keyframes glowing {
-    0% { background-position: 0 0; }
-    50% { background-position: 400% 0; }
-    100% { background-position: 0 0; }
-} */
-
-
 
 /* Reset default margin and padding on the <ul> and <li> elements */
 .navigation {
-  /* list-style-type: none;
-  margin: 150px;
-  padding: 0px;
-  position: absolute;
-  top: -20px;
-  right: -150px; */
   list-style-type: none;
   margin: 142px;
   padding: 0px;
@@ -246,13 +177,13 @@ header {
   margin-top: 70px;
   box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.2);
   display: flex;
-  padding: 5px;
+  padding: 5ttpx;
   /* align-items: center; */
 }
 .row .info{
   display: flex;
   align-items: center;
-  margin-top: 35px;
+  margin-top: 25px;
 }
 .row{
   /* width: 180%; */
@@ -267,8 +198,8 @@ header {
   padding: 25px 40px 25px 40px;
 }
 .row .info .contain p{
-  font-size: 15px;
-  line-height: 15px;
+  font-size: 18px;
+  line-height: 18px;
   padding-bottom: 20px;
 }
 body {
@@ -389,5 +320,3 @@ body {
   background-position: center;
   color: #fff; /* Change text color for visibility on the image */
 }
-
-    

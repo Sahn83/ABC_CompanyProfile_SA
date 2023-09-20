@@ -1,18 +1,235 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <style>
+        :root {
+            --primary-color: #a855f7;
+            --primary-color-dark: #9333ea;
+            --secondary-color: #ca8a04;
+            --text-dark: #1f2937;
+            --text-light: #6b7280;
+            --extra-light: #faf5ff;
+            --max-width: 1200px;
+        }
+
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        body {
+            font-family: "Poppins", sans-serif;
+        }
+
+        nav {
+            display: none;
+        }
+
+        .section {
+            background-color: var(--extra-light);
+        }
+
+        .section__container {
+            min-height: 100vh;
+            max-width: var(--max-width);
+            margin: auto;
+            padding: 1rem;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 4rem;
+        }
+
+        .content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .subtitle {
+            letter-spacing: 2px;
+            color: var(--text-light);
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        .title {
+            font-size: 2.5rem;
+            font-weight: 400;
+            line-height: 3rem;
+            color: var(--text-dark);
+            margin-bottom: 1rem;
+        }
+
+        .title span {
+            font-weight: 600;
+        }
+
+        .description {
+            line-height: 1.5rem;
+            color: var(--text-light);
+            margin-bottom: 2rem;
+        }
+
+        .action__btns {
+            display: flex;
+            gap: 1rem;
+        }
+
+        .action__btns button {
+            font-size: 1rem;
+            font-weight: 600;
+            letter-spacing: 2px;
+            padding: 1rem 2rem;
+            outline: none;
+            border: 2px solid var(--primary-color);
+            border-radius: 10px;
+            transition: 0.3s;
+            cursor: pointer;
+        }
+
+        .skills-btn {
+            background-color: var(--primary-color);
+            color: #ffffff;
+            position: relative;
+        }
+
+        .skills-btn:hover .skills-dropdown {
+            display: block;
+        }
+
+        .skills-dropdown {
+            display: none;
+            position: absolute;
+            background-color: #ffffff;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+            border-radius: 5px;
+            z-index: 1;
+        }
+
+        .skills-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .skills-list-item {
+            padding: 10px;
+            border-bottom: 1px solid #ccc;
+            text-align: center;
+            font-weight: 600;
+            color: var(--text-dark);
+            cursor: pointer;
+        }
+
+        .skills-list-item:last-child {
+            border-bottom: none;
+        }
+
+        .skills-list-item:hover {
+            background-color: var(--primary-color);
+            color: #ffffff;
+        }
+
+        .image {
+            display: grid;
+            place-items: center;
+        }
+
+        .image img {
+            width: 70%;
+            height: 60%;
+            border-radius: 50%;
+        }
+
+        @media (width < 750px) {
+            nav .checkbox {
+                display: block;
+            }
+
+            ul {
+                position: absolute;
+                width: 100%;
+                height: calc(100vh - 85px);
+                left: -100%;
+                top: 85px;
+                background-color: var(--extra-light);
+                flex-direction: column;
+                justify-content: center;
+                gap: 3rem;
+            }
+
+            nav #check:checked ~ ul {
+                left: 0;
+            }
+
+            ul li a {
+                font-size: 1.25rem;
+            }
+
+            .section__container {
+                padding: 10rem 1rem 5rem 1rem;
+                text-align: center;
+                grid-template-columns: repeat(1, 1fr);
+            }
+
+            .image {
+                grid-area: 1/1/2/2;
+            }
+
+            .action__btns {
+                margin: auto;
+            }
+        }
+    </style>
+    <title>Web Design Mastery | Responsive Portfolio</title>
 </head>
 <body>
-    <h1>Hina Profile</h1>
-    <li>Skills</li>
-        <ul class="dropdown">
-          <li>Machine Learing</li>
-          <li>Artificial intelligence</li>
-          <li>AWS</li>
-          <li>Oracle</li>
-        </ul>     
+    <section class="section">
+        <div class="section__container">
+            <div class="content">
+                <p class="subtitle">HELLO</p>
+                <h1 class="title">
+                    I'm <span>Hina<br />a</span> Application Developer 
+                </h1>
+                <p class="description">
+                    Welcome to my profile! I'm Hina, a skilled and
+                    creative Application developer with a passion for creating beautiful,
+                    responsive, and user-friendly websites. I've worked on a variety of
+                    web projects, ranging from personal blogs to e-commerce platforms.
+                    I have 2 years of experience specialized in agile software development.
+                    my problem-solving skills are exceptional, and I consistently identify opportunities for process improvements and optimizations within the agile framework.
+
+                </p>
+                <div class="action__btns">
+                    <button class="skills-btn" id="skillsBtn">Skills
+                        <div class="skills-dropdown">
+                            <ul class="skills-list">
+                                <li class="skills-list-item">Java</li>
+                                <li class="skills-list-item">HTML</li>
+                                <li class="skills-list-item">CSS</li>
+                                <li class="skills-list-item">Git</li>
+                                <li class="skills-list-item">Agile</li>
+                            </ul>
+                        </div>
+                    </button>
+                </div>
+            </div>
+            <div class="image">
+                <img src="hina.png" alt="profile" />
+            </div>
+        </div>
+    </section>
 </body>
 </html>

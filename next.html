@@ -1,313 +1,610 @@
 <!DOCTYPE html>
+
 <html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>AgileHub: Project Details</title>
+
     <style>
+
         /* Reset some default styles */
+
         body, h1, h2, h3, p, ul {
+
             margin: 0;
+
             padding: 0;
+
         }
+
+ 
 
         body {
+
             font-family: Arial, sans-serif;
+
             background-color: #f8f8f8;
+
         }
+
+ 
 
         header {
+
             background-color: #1a75ff;
+
             color: #fff;
+
             text-align: center;
+
             padding: 2rem 0;
+
         }
+
+ 
 
         header h1 {
+
             font-size: 2.5rem;
+
             margin-bottom: 10px;
+
         }
+
+ 
 
         header p {
+
             font-size: 1.2rem;
+
         }
+
+ 
 
         .container {
+
             max-width: 1200px;
+
             margin: 0 auto;
+
             padding: 20px;
+
         }
+
+ 
 
         #project-details {
+
             background-color: #fff;
+
             padding: 2rem;
+
             box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+
             border-radius: 10px;
+
             margin-top: 2rem;
+
         }
+
+ 
 
         #project-details h2 {
+
             font-size: 2rem;
+
             margin-bottom: 1rem;
+
             text-align: center;
+
         }
+
+ 
 
         .objectives {
+
             display: flex;
+
             flex-wrap: wrap;
+
             justify-content: center;
+
             gap: 20px;
+
         }
+
+ 
 
         .objective {
+
             flex: 1;
+
             max-width: 300px;
+
             text-align: center;
+
             padding: 20px;
+
             border: 1px solid #ccc;
+
             border-radius: 10px;
+
             background-color: #f7f7f7;
+
             transition: transform 0.2s ease-in-out;
+
         }
+
+ 
 
         .objective:hover {
+
             transform: scale(1.05);
+
         }
+
+ 
 
         .objective h3 {
+
             font-size: 1.4rem;
+
             margin-bottom: 10px;
+
         }
+
+ 
 
         .objective p {
+
             font-size: 1.2rem;
+
             color: #444;
+
         }
+
+ 
 
         #team {
+
             background-color: #fff;
+
             padding: 2rem;
+
             box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+
             border-radius: 10px;
+
             margin-top: 2rem;
+
         }
+
+ 
 
         .team-members-horizontal {
+
             display: flex;
+
             justify-content: space-around;
+
             flex-wrap: wrap;
+
             box-shadow: 0px 0px 10px rgba(7, 196, 209, 0.1);
+
         }
+
+ 
 
         .team-member {
+
             flex: 1;
+
             max-width: 300px;
+
             text-align: center;
+
             margin: 20px;
+
             padding: 20px;
+
             border: 1px solid #ccc;
+
             border-radius: 10px;
+
             background-color: #f7f7f7;
+
             /* background-image: url(https://th.bing.com/th/id/OIP.xddyM5Z5llwe5nz0xAnhvAHaD_?pid=ImgDet&rs=1); */
+
             transition: transform 0.2s ease-in-out;
+
             box-shadow: 10px 10px 10px rgba(3, 24, 26, 0.1);
+
         }
+
+ 
 
         .team-member:hover {
+
             transform: scale(1.05);
+
             /* background-color: #9bddd2; */
+
             background-image: url(ProfileBackground.png);
+
         }
+
+ 
 
         .team-member img {
+
             width: 150px;
+
             height: 150px;
+
             border-radius: 50%;
+
         }
+
+ 
 
         .team-member h3 {
+
             font-size: 1.4rem;
+
             margin-top: 10px;
+
         }
+
         .team-member h4 {
+
             font-size: 12px;
+
             margin-top: 10px;
+
             font-weight: bold;
+
         }
+
         .team-member p {
+
             font-size: 14px;
+
             font-style: italic;
+
             color: #444;
+
         }
+
     </style>
+
 </head>
+
 <body>
+
     <header>
+
         <h1>AgileHub: A Collaborative Workspace</h1>
+
         <p>Revolutionizing Team Collaboration</p>
+
     </header>
 
+ 
+
     <section id="project-details">
+
         <div class="container">
+
             <h2>About Our Project</h2>
+
             <p>
+
                 AgileHub is a cutting-edge collaborative workspace designed to streamline teamwork, foster creativity, and boost productivity. Our mission is to provide a digital platform that empowers teams to work together efficiently, no matter where they are located.
+
             </p>
+
             <br><br>
+
             <h2>Objectives</h2>
+
             <div class="objectives">
+
                 <div class="objective">
+
                     <h3>Seamless Communication</h3>
+
                     <p>Enable team members to communicate effortlessly, ensuring everyone is on the same page.</p>
+
                 </div>
+
                 <div class="objective">
+
                     <h3>Efficient Project Management</h3>
+
                     <p>Streamline project organization and management for increased productivity.</p>
+
                 </div>
+
                 <div class="objective">
+
                     <h3>Transparency & Accountability</h3>
+
                     <p>Promote transparency within teams and hold members accountable for their contributions.</p>
+
                 </div>
+
                 <div class="objective">
+
                     <h3>Enhanced Remote Collaboration</h3>
+
                     <p>Facilitate remote collaboration, enabling teams to work effectively from anywhere.</p>
+
                 </div>
+
             </div>
+
             <br><br>
+
             <h2>What We've Accomplished</h2>
+
             <p>
+
                 Since its inception, AgileHub has successfully transformed the way teams collaborate and work together. We've facilitated efficient communication, streamlined project management, and enhanced productivity for countless organizations across the globe.
+
             </p>
+
         </div>
+
     </section>
+
+ 
 
     <section id="team">
+
         <div class="container">
+
             <h2>Meet Our Team</h2>
+
             <div class="team-members-horizontal">
+
                 <!-- Team Member 1 -->
+
                 <div class="team-member">
+
                     <a href="hina.html">
+
                         <img src="hina.png" alt="Team Member 1">
+
                     </a>
+
                     <h3>Hina Chute</h3>
+
                     <h4>Application Developer</h4>
+
                     <p>Application Developer with 2 years of experience specialized in agile software development
+
                         <span id="dots1">....</span>
+
                         <span id="more1"> Her problem-solving skills are exceptional, and she consistently identifies opportunities for process improvements and optimizations within the agile framework.</span>
+
                     </p>
+
                     <button onclick="myFunction(1)" id="myBtn1">Read more</button>
+
                 </div>
+
+ 
 
                 <!-- Team Member 2 -->
+
                 <div class="team-member">
+
                     <a href="sahnwaz.html">
+
                         <img src="sahnwaz.jpg" alt="Team Member 2">
+
                     </a>
+
                     <h3>Sahnwaz</h3>
+
                     <h4>Application Developer</h4>
+
                     <p>Application Developer with 2 years of experience specialized in agile software development
+
                         <span id="dots2">....</span>
+
                         <span id="more2"> His problem-solving skills are exceptional, and he consistently identifies opportunities for process improvements and optimizations within the agile framework.</span>
+
                     </p>
+
                     <button onclick="myFunction(2)" id="myBtn2">Read more</button>
+
                 </div>
+
+ 
 
                 <!-- Team Member 3 -->
+
                 <div class="team-member">
+
                     <a href="indranil.html">
+
                         <img src="Indranil.png" alt="Team Member 3">
+
                     </a>
+
                     <h3>Indranil Singh</h3>
+
                     <h4>Application Developer</h4>
+
                     <p>Application Developer with 2 years of experience specialized in agile software development
+
                         <span id="dots3">....</span>
+
                         <span id="more3"> His problem-solving skills are exceptional, and he consistently identifies opportunities for process improvements and optimizations within the agile framework.</span>
+
                     </p>
+
                     <button onclick="myFunction(3)" id="myBtn3">Read more</button>
+
                 </div>
+
+ 
 
                 <!-- Team Member 4 -->
+
                 <div class="team-member">
+
                     <a href="abhishek.html">
+
                         <img src="Abhishek.png" alt="Team Member 4">
+
                     </a>
+
                     <h3>Abhishek Sur</h3>
+
                     <h4>Application Developer</h4>
+
                     <p>Application Developer with 2 years of experience specialized in agile software development
+
                         <span id="dots4">....</span>
+
                         <span id="more4"> His problem-solving skills are exceptional, and he consistently identifies opportunities for process improvements and optimizations within the agile framework.</span>
+
                     </p>
+
                     <button onclick="myFunction(4)" id="myBtn4">Read more</button>
+
                 </div>
+
             </div>
+
         </div>
+
     </section>
 
+ 
+
     <script>
+
         // Hina
+
         var dots1 = document.getElementById("dots1");
+
         var more1 = document.getElementById("more1");
+
         var btn1 = document.getElementById("myBtn1");
 
+ 
+
         // Initially hide the "Read more" content
+
         dots1.style.display = "inline";
+
         more1.style.display = "none";
+
         btn1.innerHTML = "Read more";
 
+ 
+
         // SAHNWAZ
+
         var dots2 = document.getElementById("dots2");
+
         var more2 = document.getElementById("more2");
+
         var btn2 = document.getElementById("myBtn2");
 
+ 
+
         // Initially hide the "Read more" content
+
         dots2.style.display = "inline";
+
         more2.style.display = "none";
+
         btn2.innerHTML = "Read more";
 
-
+ 
         // Indranil
+
         var dots3 = document.getElementById("dots3");
+
         var more3 = document.getElementById("more3");
+
         var btn3 = document.getElementById("myBtn3");
 
+ 
         // Initially hide the "Read more" content
+
         dots3.style.display = "inline";
+
         more3.style.display = "none";
+
         btn3.innerHTML = "Read more";
 
-        // Abhishek 
+
+        // Abhishek
+
         var dots4 = document.getElementById("dots4");
+
         var more4 = document.getElementById("more4");
+
         var btn4 = document.getElementById("myBtn4");
 
+ 
         // Initially hide the "Read more" content
+
         dots4.style.display = "inline";
+
         more4.style.display = "none";
+
         btn4.innerHTML = "Read more";
 
 
-
-
-
         function myFunction(memberNumber) {
+
             var dots = document.getElementById("dots" + memberNumber);
+
             var moreText = document.getElementById("more" + memberNumber);
+
             var btnText = document.getElementById("myBtn" + memberNumber);
 
+ 
+
             if (dots.style.display === "none" || dots.style.display === "") {
+
                 dots.style.display = "inline";
+
                 btnText.innerHTML = "Read more";
+
                 moreText.style.display = "none";
+
             } else {
+
                 dots.style.display = "none";
+
                 btnText.innerHTML = "Read less";
+
                 moreText.style.display = "inline";
+
             }
+
         }
+
     </script>
+
 </div>
+
 </div>
+
 </section>
+
 </body>
+
 </html>
