@@ -36,8 +36,7 @@ header {
     text-align:justify;
     padding: 0px;
     top: 50%;
-    /* right: -10px; */
-    left: 180px;
+    right: -31%;
     font-size: 40px;
     font-family: 'Sedgwick Ave Display', cursive;
   }
@@ -47,8 +46,7 @@ header {
     text-align:justify;
     padding: 0px;
     top: -15px;
-    /* right: 40%; */
-    left: 90px;
+    right: -12%;
     font-family: 'Sedgwick Ave Display', cursive;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
     transition: background-color 0.3s,color 0.3s;
@@ -68,12 +66,14 @@ header {
 
 /* Reset default margin and padding on the <ul> and <li> elements */
 .navigation {
+  
   list-style-type: none;
-  margin: 142px;
+  margin: 150px;
   padding: 0px;
-  position: absolute;
+  position: fixed;
   top: -20px;
-  right: -152px;
+  right: -150px;
+  
   }
   
   /* Style the navigation items */
@@ -322,33 +322,24 @@ body {
   background-position: center;
   color: #fff; /* Change text color for visibility on the image */
 }
-/* Center child elements */
-/* body, */
+
 .website-counter {
   display: flex;
   justify-content: center;
   align-items: center;
   text-shadow: #0aa387;
-  margin-left: -520px;
-  /* margin-right: 90px; */
+  margin-left: -551px;
   flex-direction: column;
 }
-.web{
-  margin-right: 150px;
-  color: #0e0d0d;
-  /* text-decoration: underline; */
-  text-shadow: #333;
 
+.web {
+  margin-right: 183px;
+  color: #0e0d0d;
+  text-shadow: #333;
 }
-/* 
-body {
-  height: 100vh;
-} */
 
 /* Styles for website counter container */
 .website-counter {
-  /* background-color: rgb(9, 247, 247); */
-  /* height: 30px; */
   width: 40px;
   color: rgb(15, 15, 15);
   border-radius: 30px;
