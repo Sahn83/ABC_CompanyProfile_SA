@@ -36,7 +36,8 @@ header {
     text-align:justify;
     padding: 0px;
     top: 50%;
-    right: 82%;
+    /* right: -10px; */
+    left: 180px;
     font-size: 40px;
     font-family: 'Sedgwick Ave Display', cursive;
   }
@@ -46,7 +47,8 @@ header {
     text-align:justify;
     padding: 0px;
     top: -15px;
-    right: 104%;
+    /* right: 40%; */
+    left: 90px;
     font-family: 'Sedgwick Ave Display', cursive;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
     transition: background-color 0.3s,color 0.3s;
@@ -319,4 +321,49 @@ body {
   background-size: cover;
   background-position: center;
   color: #fff; /* Change text color for visibility on the image */
+}
+/* Center child elements */
+/* body, */
+.website-counter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-shadow: #0aa387;
+  margin-left: -520px;
+  /* margin-right: 90px; */
+  flex-direction: column;
+}
+.web{
+  margin-right: 150px;
+  color: #0e0d0d;
+  /* text-decoration: underline; */
+  text-shadow: #333;
+
+}
+/* 
+body {
+  height: 100vh;
+} */
+
+/* Styles for website counter container */
+.website-counter {
+  /* background-color: rgb(9, 247, 247); */
+  /* height: 30px; */
+  width: 40px;
+  color: rgb(15, 15, 15);
+  border-radius: 30px;
+  font-weight: 700;
+  font-size: 20px;
+  margin-top: 1px;
+}
+
+/* Styles for reset button */
+#reset {
+  margin-top: 20px;
+  background-color: #008cba;
+  cursor: pointer;
+  font-size: 18px;
+  padding: 8px 20px;
+  color: white;
+  border: 0;
 }
