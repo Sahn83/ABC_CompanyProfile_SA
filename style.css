@@ -36,7 +36,8 @@ header {
     text-align:justify;
     padding: 0px;
     top: 50%;
-    right: -31%;
+    /* right: -10px; */
+    left: 180px;
     font-size: 40px;
     font-family: 'Sedgwick Ave Display', cursive;
   }
@@ -46,7 +47,8 @@ header {
     text-align:justify;
     padding: 0px;
     top: -15px;
-    right: -12%;
+    /* right: 40%; */
+    left: 90px;
     font-family: 'Sedgwick Ave Display', cursive;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
     transition: background-color 0.3s,color 0.3s;
@@ -66,14 +68,12 @@ header {
 
 /* Reset default margin and padding on the <ul> and <li> elements */
 .navigation {
-  
   list-style-type: none;
-  margin: 150px;
+  margin: 142px;
   padding: 0px;
-  position: fixed;
+  position: absolute;
   top: -20px;
-  right: -150px;
-  
+  right: -152px;
   }
   
   /* Style the navigation items */
@@ -179,7 +179,7 @@ header {
   margin-top: 70px;
   box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.2);
   display: flex;
-  padding: 5ttpx;
+  padding: 5px;
   /* align-items: center; */
 }
 .row .info{
@@ -322,30 +322,29 @@ body {
   background-position: center;
   color: #fff; /* Change text color for visibility on the image */
 }
-
-.website-counter {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-shadow: #0aa387;
-  margin-left: -551px;
-  flex-direction: column;
-}
-
-.web {
-  margin-right: 183px;
+.web{
+  margin-right: 150px;
   color: #0e0d0d;
+  /* text-decoration: underline; */
   text-shadow: #333;
-}
 
-/* Styles for website counter container */
-.website-counter {
-  width: 40px;
+}
+.website-counter {   
+  /* background-color: rgb(9, 247, 247); */
+  /* height: 30px; */
+  width: 40px;     /* Styles for website counter container */
   color: rgb(15, 15, 15);
   border-radius: 30px;
   font-weight: 700;
   font-size: 20px;
   margin-top: 1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-shadow: #0aa387;
+  margin-left: -520px;
+  /* margin-right: 90px; */
+  flex-direction: column;
 }
 
 /* Styles for reset button */
@@ -357,4 +356,98 @@ body {
   padding: 8px 20px;
   color: white;
   border: 0;
+}
+/* body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+} */
+
+/* Style inputs */
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 6px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+
+/* Style the container/contact section */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 10px;
+  background-image: url(contact_us_2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 50px;
+}
+.container p {
+  color: blue; /* Change this to the desired color */
+  /* text-align: justify; */
+}
+
+.container h2 {
+  text-align: left;
+  padding-left: 470px;
+}
+/* Create two columns that float next to eachother */
+.column {
+  float: left;
+  width: 30%;
+  margin-top: -20px;
+  padding: 30px;
+  
+}
+
+/* Clear floats after the columns */
+.row-com:after {
+  content: "";
+  display: table;
+  clear: both;
+  
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column, input[type=submit] {
+    width: 10%;
+    margin-top: 0;
+  }
+}
+/* Style for the thank you pop-up container */
+.thank-you-popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+/* Style for the thank you message */
+.thank-you-message {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
 }

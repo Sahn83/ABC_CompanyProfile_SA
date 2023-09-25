@@ -1,77 +1,88 @@
 <!DOCTYPE html>
+
 <html>
 
 <head>
+
   <title>Company Website</title>
+
   <link rel="stylesheet" type="text/css" href="style.css">
+
 </head>
 
 <body>
-  <div class="header-container">
-    <header>
-      <div class="logo">
-        <a href="index.html">
-          <img src="company-logo.png" alt="Company Logo">
-        </a>
-      </div>
-      <div class="company-name">
-        <h1><a href="index.html">ABC Limited</a></h1>
-        <h2 class="blink">Possibilities are Infinite</h2>
-      </div>
-      <div class="web">Website visit count:</div>
 
+  <header>
+
+    <div class="logo">
+
+      <a href="index.html">
+        <img src="company-logo.png" alt="Company Logo">
+      </a>
+
+    </div>
+
+    <div class="company-name">
+
+      <h1><a href="index.html">ABC Limited</a></h1>
+      <h2 class="blink">Possibilities are Infinite</h2>
+
+    </div>
+    <div class="web">Website visit count:</div>
     <div class="website-counter"></div>
     <script>
-      var counterContainer = document.querySelector(".website-counter");
+    var counterContainer = document.querySelector(".website-counter");
       var resetButton = document.querySelector("#reset");
       var visitCount = localStorage.getItem("page_view");
-
+      
       // Check if page_view entry is present
-
       if (visitCount) {
         visitCount = Number(visitCount) + 1;
         localStorage.setItem("page_view", visitCount);
-
       } else {
-
         visitCount = 1;
         localStorage.setItem("page_view", 1);
-
       }
-
       counterContainer.innerHTML = visitCount;
+      
       // Adding onClick event listener
-
       resetButton.addEventListener("click", () => {
         visitCount = 1;
         localStorage.setItem("page_view", 1);
         counterContainer.innerHTML = visitCount;
       });
       </script>
-    </header>
-    <nav class="navigation">
+
+  </header>
+<br>
+  <!-- <a href="redirect.html">
+    <button class="redirect-button" type="button">Go to Company Website!!</button>
+  </a> -->
+
+  <div class="menu-bar">
+    <nav>
       <ul class="navigation">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Projects</a></li>
-        <li><a href="#">Career</a>
-          <ul class="dropdown">
-            <li><a href="#">join us</a>
-              <ul class="dropdown-menu">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Projects</a></li>
+          <li><a href="#">Career</a>
+            <ul class="dropdown">
+              <li><a href="#">join us</a>
+                <ul class="dropdown-menu">
                 <li><a href="search.html"> search and apply</a></li>
                 <li><a href="search.html"> Experienced Professional</a></li>
               </ul>
-            </li>
-            <li><a href="#">Explore jobs</a>
-              <ul class="dropdown-menu">
+              </li>
+              <li><a href="#">Explore jobs</a>
+                <ul class="dropdown-menu">
                 <li><a href="consulting.html"> Consulting jobs</a></li>
                 <li><a href="Digitl jobs.html"> Digital jobs</a></li>
                 <li><a href="Opertions.html"> Operations Jobs</a></li>
                 <li><a href="Technology.html"> Technology Jobs</a></li>
               </ul>
-            </li>
-          </ul>
-        </li>
-        <li><a href="#">Services</a>
+              </li>
+              
+            </ul></li>
+          <li><a href="#">Services</a>
           <ul class="dropdown">
             <li><a href="security.html">Security</a></li>
             <li><a href="ai.html">Artificial intelligence</a></li>
@@ -79,95 +90,217 @@
             <li><a href="webdev.html">web development</a></li>
           </ul>
         </li>
-        <li><a href="#">About Us</a></li>
-        <li><a href="#">Contact Us</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Contact Us</a></li>          
       </ul>
-    </nav>
+  </nav>
   </div>
-<br>
-<!-- language translate code -->
+  <br>
+  <!-- language translate code -->
 
 <!--  
 
-<p>Translate this page:</p> -->
+  <p>Translate this page:</p> -->
 
-<div id="google_translate_element"></div>
+  <div id="google_translate_element"></div>
 
-<!-- <p>
+  <!-- <p>
 
-  Translate this page in
+    Translate this page in
 
-  your preferred language:
+    your preferred language:
 
-</p> -->
+  </p> -->
 
+ 
 
+  <div id="google_translate_element"></div>
 
-<div id="google_translate_element"></div>
+ 
 
+  <script type="text/javascript">
 
+    function googleTranslateElementInit() {
 
-<script type="text/javascript">
+      new google.translate.TranslateElement(
 
-  function googleTranslateElementInit() {
+        {pageLanguage: 'en'},
 
-    new google.translate.TranslateElement(
+        'google_translate_element'
 
-      {pageLanguage: 'en'},
+      );
 
-      'google_translate_element'
+    }
 
-    );
+  </script>
 
-  }
+ 
 
-</script>
+  <script type="text/javascript"
 
+      src=
 
+"https://translate.google.com/translate_a/element.js?
 
-<script type="text/javascript"
+cb=googleTranslateElementInit">
 
-    src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
-
-</script>
-</br>
-<div class="row">
-<div class="video">
-<video autoplay="" controls="" loop="" >
-  <source src="video.mp4" type="video/mp4">
-</video>
+  </script>
+  </br>
+  <div class="row">
+  <div class="video">
+  <video autoplay="" controls="" loop="" >
+    <source src="video.mp4" type="video/mp4">
+  </video>
 </div>
 <div class="info">
 <div class="contain">
-<p> Innovation: Highlight your commitment to innovation and staying at the forefront of your field. This could involve showcasing cutting-edge technologies, creative problem-solving, or your dedication to continuous improvement. </p>
-<p> Integrity: Emphasize the importance of trust and ethical conduct in your project. Share how you maintain transparency, honesty, and ethical standards in all your endeavors. </p> 
-<p>If your project involves a community or social aspect, express your dedication to building and supporting a strong, inclusive, and engaged community. Highlight the ways you foster collaboration and a sense of belonging.</p> 
-<p> If your project has an environmental or social impact, showcase your commitment to sustainability and responsible practices. Share your efforts to reduce your carbon footprint, promote eco-friendly solutions, or support social causes.</p> 
+  <p> Innovation: Highlight your commitment to innovation and staying at the forefront of your field. This could involve showcasing cutting-edge technologies, creative problem-solving, or your dedication to continuous improvement. </p>
+  <p> Integrity: Emphasize the importance of trust and ethical conduct in your project. Share how you maintain transparency, honesty, and ethical standards in all your endeavors. </p> 
+  <p>If your project involves a community or social aspect, express your dedication to building and supporting a strong, inclusive, and engaged community. Highlight the ways you foster collaboration and a sense of belonging.</p> 
+  <p> If your project has an environmental or social impact, showcase your commitment to sustainability and responsible practices. Share your efforts to reduce your carbon footprint, promote eco-friendly solutions, or support social causes.</p> 
 </div>
 </div>
 </div>
 <br>
 <!-- Creating a container to include all the projects -->
 <div class="project-container">
-<!-- Project Showcase -->
-<div class="projects">
-  <a href="next.html" class="project highlighted" id="project1">
-    <h3>AgileHub:A Collaborative workspace</h3>
-    <p>AgileHub is a collaborative workspace and project management platform designed to streamline Agile methodologies.It offers features for sprint planning,backlog management and team communication enabling teams to enhance their agility and efficiency.</p>
-  </a>
-
-  <a href="#" class="project" id="project2">
-    <h3>Javalytics:Data Analytics in Java</h3>
-    <p>Javalytics aims to revolutionize java development by providing advanced analytics and insights into code performance,reliability and security.It helps teams optimize JVM-based applications and make data-driven decisions for codebase improvements.</p>
-  </a>
-
-  <a href="#" class="project" id="project3">
-    <h3>FrontEnd fusion:UI/UX Desig Tool</h3>
-    <p>FrontEnd Fusion is a UI/UX design tool focussed on rapid web prototyping and collaboration.It empowers designers and developers to create seamless and visually stunning user interfaces while facilitating real time collaboration among team members.</p>
-  </a>
+  <!-- Project Showcase -->
+  <div class="projects">
+    <a href="next.html" class="project highlighted" id="project1">
+      <h3>AgileHub:A Collaborative workspace</h3>
+      <p>AgileHub is a collaborative workspace and project management platform designed to streamline Agile methodologies.It offers features for sprint planning,backlog management and team communication enabling teams to enhance their agility and efficiency.</p>
+    </a>
+  
+    <a href="#" class="project" id="project2">
+      <h3>Javalytics:Data Analytics in Java</h3>
+      <p>Javalytics aims to revolutionize java development by providing advanced analytics and insights into code performance,reliability and security.It helps teams optimize JVM-based applications and make data-driven decisions for codebase improvements.</p>
+    </a>
+  
+    <a href="#" class="project" id="project3">
+      <h3>FrontEnd fusion:UI/UX Desig Tool</h3>
+      <p>FrontEnd Fusion is a UI/UX design tool focussed on rapid web prototyping and collaboration.It empowers designers and developers to create seamless and visually stunning user interfaces while facilitating real time collaboration among team members.</p>
+    </a>
+  </div>
 </div>
+<div class="container">
+
+  <div style="text-align:center">
+
+    <h2>Contact Us</h2>
+
+    <p>Swing by for a cup of coffee, or leave us a message:</p>
+
+  </div>
+
+  <div class="row-com">
+
+    <!-- <div class="column">
+
+      <img src="istockphoto-1311934969-170667a.jpg" style="width:100%">
+
+    </div> -->
+
+    <div class="column">
+
+      <form action="javascript:void(0);" onsubmit="showThankYouPopup()">
+
+        <label for="fname">First Name <span style="color: red;">*</span></label>
+
+        <input type="text" id="fname" name="firstname" placeholder="Your name.." required>
+
+        <label for="lname">Last Name <span style="color: red;">*</span></label>
+
+        <input type="text" id="lname" name="lastname" placeholder="Your last name.." required>
+
+        <label for="email">Email <span style="color: red;">*</span></label>
+
+        <input type="text" id="email" name="email" placeholder="Your email-id name.." required>
+
+        <label for="country">Country</label>
+
+        <select id="country" name="country">
+          <option value="select">select</option>
+
+          <option value="australia">Australia</option>
+
+          <option value="canada">Canada</option>
+
+          <option value="usa">USA</option>
+
+          <option value="india">India</option>
+
+        </select>
+
+        <label for="subject">Comments <span style="color: red;">*</span></label>
+
+        <textarea id="subject" name="subject" placeholder="Write something.." required style="height:70px"></textarea>
+
+        <input type="submit" value="Submit">
+
+      </form>
+
+    </div>
+
+  </div>
+
 </div>
+
+
+
+<!-- Thank you pop-up -->
+
+<div class="thank-you-popup" id="thankYouPopup">
+
+  <div class="thank-you-message">
+
+    Thank you for your submission!
+
+    <p><a href="javascript:closeThankYouPopup();" style="color: blue; text-decoration: underline;">Close</a></p>
+
+  </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<script>
+
+function showThankYouPopup() {
+
+// Prevent the default form submission
+
+event.preventDefault();
+
+
+
+// Show the thank you pop-up
+
+document.getElementById("thankYouPopup").style.display = "flex";
+
+}
+
+
+
+function closeThankYouPopup() {
+
+// Close the thank you pop-up
+
+document.getElementById("thankYouPopup").style.display = "none";
+
+}
+
+</script>
+
+
 <!-- </br> -->
-</body>
+  </body>
 
 </html>
