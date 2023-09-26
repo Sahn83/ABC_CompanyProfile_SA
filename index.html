@@ -182,125 +182,158 @@ cb=googleTranslateElementInit">
     </a>
   </div>
 </div>
-<div class="container">
+<!-- <div class="faq-container"> -->
+  <h5>FAQ Section</h5>
+<div class="faq">
+  <div class="question">What are common Agile frameworks and methodologies?</div>
 
-  <div style="text-align:center">
+  <div class="answer">
 
-    <h2>Contact Us</h2>
+     <!-- <img src="images/thumb.png" alt=""> -->
 
-    <p>Swing by for a cup of coffee, or leave us a message:</p>
-
+     Some popular Agile frameworks and methodologies include:
+     <ol>
+      <li>
+        Scrum: A framework for managing work in small, iterative cycles called sprints.
+      </li>
+      <li>
+        Kanban: A visual management tool for visualizing work and optimizing flow.
+      </li>
+      <li>
+        Lean: A philosophy that focuses on minimizing waste and maximizing value.
+      </li>
+      <li>
+        Extreme Programming (XP): A development methodology that emphasizes practices like pair programming and test-driven development (TDD).
+      </li>
+      </ol>
   </div>
+</div>
 
-  <div class="row-com">
+<div class="faq">
+  <div class="question"> What are the challenges of adopting Agile methodology?</div>
+  <div class="answer">
+     <ol>
+        <li>
+          It primarily focuses on rigorous testing and customer involvement.
+        </li>
+        <li>
+          Developers must complete every feature before moving on to the next one.
+        </li>
+        <li>
+          The code needs extra attention for the software to work as intended.
+        </li>
+        <li>
+          It requires more planning before development begins.
+        </li>
+        <li>
+          It impacts management to a large extent.
+        </li>
+     </ol>
+  </div>
+</div>
 
-    <!-- <div class="column">
+<div class="faq">
+  <div class="question">How can my team adopt Agile practices?</div>
+  <div class="answer">
+    To adopt Agile practices, consider the following steps:
+     <ol>
+        <li>
+          Educate your team: Ensure everyone understands Agile principles and practices.
+        </li>
+        <li>
+          Continuously improve: Regularly review and adapt your processes to optimize efficiency and effectiveness.
+        </li>
+        <li>
+          Embrace collaboration: Foster open communication and collaboration among team members.
+        </li>
+        <li>
+          Start small: Begin with a pilot project to test Agile methods.
+        </li>
+     </ol>
+     <!-- <video width="480px" controls>
+        <source src="video/example.mp4" type="video/mp4">
+     </video> -->
+  </div>
+</div>
 
-      <img src="istockphoto-1311934969-170667a.jpg" style="width:100%">
+<div class="faq">
 
-    </div> -->
+  <div class="question">What is “velocity” in Agile?</div>
 
-    <div class="column">
-
-      <form action="javascript:void(0);" onsubmit="showThankYouPopup()">
-
-        <label for="fname">First Name <span style="color: red;">*</span></label>
-
-        <input type="text" id="fname" name="firstname" placeholder="Your name.." required>
-
-        <label for="lname">Last Name <span style="color: red;">*</span></label>
-
-        <input type="text" id="lname" name="lastname" placeholder="Your last name.." required>
-
-        <label for="email">Email <span style="color: red;">*</span></label>
-
-        <input type="text" id="email" name="email" placeholder="Your email-id name.." required>
-
-        <label for="country">Country</label>
-
-        <select id="country" name="country">
-          <option value="select">select</option>
-
-          <option value="australia">Australia</option>
-
-          <option value="canada">Canada</option>
-
-          <option value="usa">USA</option>
-
-          <option value="india">India</option>
-
-        </select>
-
-        <label for="subject">Comments <span style="color: red;">*</span></label>
-
-        <textarea id="subject" name="subject" placeholder="Write something.." required style="height:70px"></textarea>
-
-        <input type="submit" value="Submit">
-
-      </form>
-
-    </div>
-
+  <div class="answer">
+    Velocity measures completed work and the time required to complete a single sprint.
+     The teams use velocity as a calibration tool for creating an accurate and efficient timeline.
+      Additionally, it helps team members identify issues and measure improvements. 
   </div>
 
 </div>
-
-
-
-<!-- Thank you pop-up -->
-
-<div class="thank-you-popup" id="thankYouPopup">
-
-  <div class="thank-you-message">
-
-    Thank you for your submission!
-
-    <p><a href="javascript:closeThankYouPopup();" style="color: blue; text-decoration: underline;">Close</a></p>
-
-  </div>
-
 </div>
-
-
-
-
-
-
-
-
-
-
-
 <script>
-
-function showThankYouPopup() {
-
-// Prevent the default form submission
-
-event.preventDefault();
-
-
-
-// Show the thank you pop-up
-
-document.getElementById("thankYouPopup").style.display = "flex";
-
+  let questions = document.querySelectorAll(".question");
+for(let question of questions){
+   question.addEventListener("click", (event) => {
+      event.target.classList.toggle("active");
+if(event.target.nextElementSibling.style.maxHeight == 0){
+event.target.nextElementSibling.style.maxHeight = event.target.nextElementSibling.scrollHeight + "px";
+      }else{
+event.target.nextElementSibling.style.maxHeight = "";
+      }
+   });
 }
-
-
-
-function closeThankYouPopup() {
-
-// Close the thank you pop-up
-
-document.getElementById("thankYouPopup").style.display = "none";
-
-}
-
 </script>
 
-
-<!-- </br> -->
-  </body>
-
+</body>
+<footer>
+  <div class="container">
+    <div style="text-align:center">
+      <h2>Contact Us</h2>
+      <p>Swing by for a cup of coffee, or leave us a message:</p>
+    </div>
+    <div class="row-com">
+      <!-- <div class="column">
+        <img src="istockphoto-1311934969-170667a.jpg" style="width:100%">
+      </div> -->
+      <div class="column">
+        <form action="javascript:void(0);" onsubmit="showThankYouPopup()">
+          <label for="fname">First Name <span style="color: red;">*</span></label>
+          <input type="text" id="fname" name="firstname" placeholder="Your name.." required>
+          <label for="lname">Last Name <span style="color: red;">*</span></label>
+          <input type="text" id="lname" name="lastname" placeholder="Your last name.." required>
+          <label for="email">Email <span style="color: red;">*</span></label>
+          <input type="text" id="email" name="email" placeholder="Your email-id name.." required>
+          <label for="country">Country</label>
+          <select id="country" name="country">
+            <option value="select">select</option>
+            <option value="australia">Australia</option>
+            <option value="canada">Canada</option>
+            <option value="usa">USA</option>
+            <option value="india">India</option>
+          </select>
+          <label for="subject">Comments <span style="color: red;">*</span></label>
+          <textarea id="subject" name="subject" placeholder="Write something.." required style="height:70px"></textarea>
+          <input type="submit" value="Submit">
+       </form>
+      </div>
+    </div>
+  </div>
+  <!-- Thank you pop-up -->
+  <div class="thank-you-popup" id="thankYouPopup">
+    <div class="thank-you-message">
+      Thank you for your submission!
+      <p><a href="javascript:closeThankYouPopup();" style="color: blue; text-decoration: underline;">Close</a></p>
+    </div>
+  </div>
+  <script>
+  function showThankYouPopup() {
+  // Prevent the default form submission
+  event.preventDefault();
+  // Show the thank you pop-up
+  document.getElementById("thankYouPopup").style.display = "flex";
+  }
+  function closeThankYouPopup() {
+  // Close the thank you pop-up
+  document.getElementById("thankYouPopup").style.display = "none";
+  }
+  </script>
+</footer>
 </html>
