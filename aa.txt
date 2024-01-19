@@ -1,0 +1,40 @@
+$ git clean -fdx
+Deletion of directory 'New folder/' failed. Should I try again? (y/n) n
+warning: failed to remove New folder/: Permission denied
+Removing 360_F_112294118_isIxVhhaP6iPDzV8A8CTgoxQG8GE3rSb.jpg
+Removing 826514c7dc944aa7b1146a0e2f7d70aa.webp
+Removing AWS Certified Cloud Practitioner certificate.pdf
+Removing AWS Certified Cloud Practitioner.pdf
+Removing As.jpg.jpg
+Removing Book1.xlsx
+Removing ChromeSetup (1).exe
+Removing DropboxInstaller.exe
+Removing EpicInstaller-15.17.1-cf41334f8bfc450f9da85c510a405414.msi
+Removing Git-2.43.0-64-bit.exe
+Removing Install VALORANT.exe
+Removing JP01_JP10_2023_6320106854_YBF5_XXXXXXXXXX_ZJ02_00_0 (1).PDF
+Removing JP01_JP10_2023_6320106854_YBF5_XXXXXXXXXX_ZJ02_00_0.PDF
+Removing L30.23.DA.br.sdm0v13sp01nt.hair.mkv
+Removing LMP7Kz-HRfieYIU9j3iwMw.webp
+Removing New folder/index.html
+Removing OBS-Studio-30.0.2-Full-Installer-x64.exe
+Removing OfficeSetup.exe
+Removing OnVUE-23.23.136.exe
+Removing PXL_20230827_065802149~2.jpg
+Removing Picsart_23-12-16_20-50-26-636.png
+Removing Realme 9i Bill.pdf
+Removing SteamSetup.exe
+Removing VSCodeUserSetup-x64-1.85.1.exe
+Removing WhatsApp Image 2023-12-17 at 00.36.48_8f8590fe.jpg
+Removing WhatsApp Video 2024-01-14 at 02.13.06_0a8aa812.mp4
+Removing desktop.ini
+Removing eclipse-inst-jre-win64.exe
+Removing filmora-idco_setup_full1901.exe
+Removing invideo-ai-1080 The Art of Tea_ A Journey with Moti Prem 2024-01-18.mp4
+Removing "invideo-ai-1080 \340\244\244\340\245\200\340\244\250 \340\244\227\340\244\277\340\244\262\340\244\276\340\244\270 \340\244\246\340\245\202\340\244\247 \340\244\225\340\244\276 \340\244\260\340\244\271\340\244\270\340\245\215\340\244\257 2023-12-17.mp4"
+Removing jdk-21_windows-x64_bin.exe
+Removing mongodb-windows-x86_64-7.0.4-signed.msi
+Removing mongosh-2.1.1-x64.msi
+Removing node-v20.10.0-x64.msi
+Removing theme-4486336918745490606.xml
+Removing unlocking-the-potential-of-regional-cinema.mp4
